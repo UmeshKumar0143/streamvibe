@@ -16,6 +16,12 @@ datasource db {
 
 
 model User{
-  id Int @unique @id
-  name String 
+  id              String  @id @unique @default(uuid())
+  name            String 
+  username        String @unique
+  externalUserId  String 
+  imageUrl        String @db.Text
+  bio             String @db.Text
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt 
 }
