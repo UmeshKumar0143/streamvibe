@@ -17,11 +17,11 @@ datasource db {
 
 model User{
   id              String  @id @unique @default(uuid())
-  name            String 
+  name            String  
   username        String @unique
-  externalUserId  String 
+  externalUserId  String @unique
   imageUrl        String @db.Text
-  bio             String @db.Text
+  bio             String? @db.Text
   createdAt       DateTime @default(now())
   updatedAt       DateTime @updatedAt 
 }
