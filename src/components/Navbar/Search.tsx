@@ -1,7 +1,7 @@
 "use client"
 import { FormEvent, useState } from "react";
-import { Button } from "./ui/button";
-import { Input } from "./ui/input";
+import { Button } from "../ui/button";
+import { Input } from "../ui/input";
 import { Search as SearchIcon , X    }from "lucide-react";
 import queryString from "query-string";
 import { useRouter } from "next/navigation";
@@ -29,7 +29,7 @@ export default function Search(){
             setInputValue(""); 
     }
 
-    return <form onSubmit={handleSubmit} className="relative w-[75%] px-10 py-2 flex justify-center items-center">
+    return <form onSubmit={handleSubmit} className="relative md:w-[75%] w-[100%]   px-10 py-2 flex justify-center items-center">
         <Input className="focus-visible:ring-off-0 focus-visible:ring-0
          focus-visible:ring-transparent rounded-r-none " value={inputValue} onChange={e=>setInputValue(e.target.value)} placeholder="Search">
         </Input>
