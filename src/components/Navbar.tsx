@@ -1,37 +1,17 @@
 import Link from "next/link";
-import Logo from "./Logo";
-
-
-const navItem = [
-    {
-        title: "Home",
-        to_link: "/"
-    }, 
-    {
-        title: "Trending", 
-        to_link: "/trending", 
-    }, 
-    {
-        title: "Followed", 
-        to_link: "/followed"
-    }
-]
+import Search from "./Search";
+import Action from "./Actions";
+import { Home } from "lucide-react";
 
 export default function Navbar(){
-    return <div className="container mx-auto py-5 flex justify-between border-b-2 border-zinc-500">
-        <Logo />
-        <div>
-            <div className="flex gap-10 ">
-            {navItem.map((item, index)=> {
-                return <Link className="font-medium text-lg  px-4 py-1 bg-purple-500 rounded-xl" href={item.to_link}>{item.title} </Link>
-            })}
+        return <div className="container mx-auto    px-16  py-4 ">
+            <div className="w-full flex justify-between items-center">
+            <div className="flex justify-center items-center gap-2 hover:text-purple-500">
+            <Link href={'/'}  ><Home/></Link>
+            <Link href={'/'} >Home</Link>
+            </div>
+            <Search/>
+            <Action/>
             </div>
         </div>
-            <div className="flex  gap-5 items-center`">
-                Sign in
-            <div>
-                Sign in
-            </div>
-            </div>
-    </div>
 }
