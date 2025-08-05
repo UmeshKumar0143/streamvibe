@@ -1,11 +1,9 @@
-import Link from "next/link";
 import Search from "./Search";
 import Action from "./Actions/Actions";
-import { AlignJustify, Home } from "lucide-react";
 import Logo from "../Logo/Logo";
 
 export default function Navbar(){
-        return <div className=" relative mx-auto md:py-5  py-1 md:border-none border-b md:px-16 px-4    ">
+        return <div className=" fixed w-full md:py-4  py-1  border-b border-neutral-800 md:px-16 px-4 top-0 z-50     ">
             <div className="w-full flex justify-between items-center">
             <Logo/>
             <Search/>
