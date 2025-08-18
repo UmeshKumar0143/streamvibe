@@ -8,6 +8,6 @@ interface SideBarProps{
 
 export const useSideBar = create<SideBarProps>((set)=>({
     collasped:false,
-    onExpand:()=>set(()=>({collasped:true})),
-    onCollaspe:()=>set(()=>({collasped:false}))
+    onExpand:()=>set(()=>({collasped:false})),
+    onCollaspe:()=>set(()=>({collasped:true}))
 }))
