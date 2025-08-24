@@ -1,10 +1,11 @@
-import {SignInButton, SignUpButton, UserButton } from "@clerk/nextjs"
+import {SignInButton, SignUpButton } from "@clerk/nextjs"
 import { currentUser } from "@clerk/nextjs/server"
 import { Button } from "../../ui/button";
 import MobileActions from "./MobileActions";
 
 export default async function Action(){
         const user = await currentUser(); 
+
     return <div className=" justify-between items-center gap-4 ">
             {!user &&
             <div className="md:flex hidden  justify-between items-center gap-3 ">
@@ -16,7 +17,7 @@ export default async function Action(){
             </SignUpButton>
             </div>
 }           
-            <MobileActions user={user}/>    
+            <MobileActions />    
 
     </div>
 }

@@ -12,7 +12,7 @@ export default function Toogle(){
       {!collasped && 
    
       <div className="flex justify-between items-center px-4 py-2">
-                <h1 className="text-md ml-3 font-medium">For you</h1> 
+                <h1 className="md:text-base text-xs md:ml-3 truncate font-medium">For you</h1> 
             <Hint label={label} side={"right"} asChild >
                 <Button onClick={()=>onCollaspe()} variant={"ghost"} className="hover:cursor-pointer">
                 <ArrowLeftFromLine  />
@@ -22,7 +22,7 @@ export default function Toogle(){
 }        
       {collasped && <div className="flex justify-between items-center px-4 py-2">
           <Hint label={label} side="right" asChild >
-                <Button onClick={()=>onExpand()} variant={"ghost"} className="hover:cursor-pointer">
+                <Button onClick={()=>onExpand()} variant={"ghost" }  className="hover:cursor-pointer">
                 <ArrowRightFromLine  />
                 </Button>
                 </Hint>
