@@ -9,7 +9,7 @@ import React from "react"
 
 
 interface HintProps  {
-    label: string
+    label?: string
     children: React.ReactNode
     side?: "left" | "right" | "bottom" | "top"
     align?: "start" | "center" | "end"  

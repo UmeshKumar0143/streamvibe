@@ -1,7 +1,6 @@
-import { UserButton } from "@clerk/nextjs";
 export default function Home() {
   return (
-    <div>
+    <div className="px-8 py-5">
       <p>DashBoard</p>
        </div>
 

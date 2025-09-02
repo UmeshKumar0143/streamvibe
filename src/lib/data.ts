@@ -5,6 +5,7 @@ export const user_data = [
     "email": "aarav.sharma@example.com",
     "country": "India",
     "joined_date":" 2023-09-12",
+    "isLive": true, 
   },
   {
     "user_id": 2,
@@ -12,6 +13,7 @@ export const user_data = [
     "email": "sophia.johnson@example.com",
     "country": "USA",
     "joined_date": "2024-01-05",
+    "isLive": false, 
   },
   {
     "user_id": 3,
@@ -19,5 +21,6 @@ export const user_data = [
     "email": "liam.muller@example.de",
     "country": "Germany",
     "joined_date": "2024-11-17",
+    "isLive": false, 
   }
 ]
