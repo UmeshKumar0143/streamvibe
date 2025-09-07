@@ -1,9 +1,9 @@
 import {
     Tooltip,
     TooltipContent,
+    TooltipProvider,
     TooltipTrigger
 } from "@/components/ui/tooltip"
-import { TooltipProvider } from "@radix-ui/react-tooltip"
 import React from "react"
 
 
@@ -16,7 +16,12 @@ interface HintProps  {
     asChild?: boolean
 }
 
+
+
 export default function Hint({label,children,  align, side, asChild}:HintProps){
+
+    if(!label) return <>{children}</>
+
     return <div>
         <TooltipProvider>
                 <Tooltip delayDuration={0}>
