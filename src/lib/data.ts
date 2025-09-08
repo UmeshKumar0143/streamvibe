@@ -1,7 +1,8 @@
 export const user_data = [
   {
     "user_id": 1,
-    "username": "Aarav Sharma",
+    "name": "Aarav Sharma",
+    "username": "aarav_sharma",
     "email": "aarav.sharma@example.com",
     "country": "India",
     "joined_date":" 2023-09-12",
@@ -9,7 +10,8 @@ export const user_data = [
   },
   {
     "user_id": 2,
-    "username": "Sophia Johnson",
+    "name": "Sophia Johnson",
+    "username": "sophie_johnosn",
     "email": "sophia.johnson@example.com",
     "country": "USA",
     "joined_date": "2024-01-05",
@@ -17,7 +19,8 @@ export const user_data = [
   },
   {
     "user_id": 3,
-    "username": "Liam Müller",
+    "name": "Liam Müller",
+    "username": "liam_muller",
     "email": "liam.muller@example.de",
     "country": "Germany",
     "joined_date": "2024-11-17",
