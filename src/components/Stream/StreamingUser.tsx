@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "../ui/button";
 import { useState } from "react";
-import { Eye, Ghost, Share, Share2, ThumbsDown, ThumbsUp } from "lucide-react";
+import { Eye,  Share2, ThumbsDown, ThumbsUp } from "lucide-react";
 import CurrentUser from "@/lib/types";
 
 
