@@ -1,4 +1,5 @@
 import CurrentUser from "@/lib/types";
+import Image from "next/image";
 import Link from "next/link";
 
 interface ThumbnailProps {
@@ -27,16 +28,21 @@ export default function StreamThumbnail({
     started_at,
     user,
   } = ThumbnailProps;
-
   return (
-      <Link href={`/stream/user/1`} className= " block w-[14vw] h-[14vh] p-2  border">
-        <div className="flex-col ">
+      <Link href={`/stream/user/1`} >
+        <div className="block w-[14vw] h-[14vh] p-2  border">
           <div className="flex justify-between px-2">
             <p>Live</p>
             <p>12k</p>
           </div>
-        <h1>{title}</h1>
-        </div>
+      </div>
+      <div className="p-1 w-[12vw] truncate">
+        <h1 className="font-semibold text-lg ">{title}</h1>
+      </div>
+         <Link href={"./username"} className=" flex  items-center  gap-2 ">
+        <Image src={"/avatar.png"} alt="avatar" className="rounded-full  mt-2  w-7 h-7 " width={20} height={20} />
+        <p className="text-lg ">{user?.username}</p>
+        </Link>
       </Link>
   );
 }

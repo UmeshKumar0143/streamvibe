@@ -26,6 +26,42 @@ export const user_data = [
     joined_date: "2024-11-17",
     isLive: false,
   },
+  {
+    user_id: 4,
+    name: "KodaKawa",
+    username: "kodkawa",
+    email: "ko.kawa@example.de",
+    country: "India",
+    joined_date: "2024-12-11",
+    isLive: true,
+  },
+  {
+    user_id: 5,
+    name: "Tojii",
+    username: "to_ji",
+    email: "to@example.de",
+    country: "Japan",
+    joined_date: "2025-12-17",
+    isLive: true,
+  },
+  {
+    user_id: 6,
+    name: "Inonix Master",
+    username: "inonix",
+    email: "in@example.de",
+    country: "Africa",
+    joined_date: "2025-1-3",
+    isLive: false,
+  },
+  {
+    user_id: 7,
+    name: "Bloody Babe",
+    username: "bloddy_bae",
+    email: "bae@example.de",
+    country: "Canada",
+    joined_date: "2025-5-8",
+    isLive: false,
+  },
 ];
 
 export const CurrentUserData = {
@@ -48,11 +84,14 @@ export const StreamersData = [
     duration: "1:12:34",
     isLive: true,
     started_at: "2025-10-05T14:20:00Z",
-    user_id: {
-    name: "Liam Müller",
-    username: "liam_muller",
-    email: "liam.muller@example.de",
-    country: "Germany",
+    user: {
+     user_id: 1,
+    name: "Aarav Sharma",
+    username: "aarav_sharma",
+    email: "aarav.sharma@example.com",
+    country: "India",
+    joined_date: "2023-09-12",
+    isLive: true,
     },
   },
   {
@@ -64,11 +103,14 @@ export const StreamersData = [
     duration: "2:04:11",
     isLive: false,
     started_at: "2025-09-27T18:00:00Z",
-    user_id: {
+    user: {
+     user_id: 3,
     name: "Liam Müller",
     username: "liam_muller",
     email: "liam.muller@example.de",
     country: "Germany",
+    joined_date: "2024-11-17",
+    isLive: false,
     },
   },
   {
@@ -80,11 +122,14 @@ export const StreamersData = [
     duration: "0:58:44",
     isLive: false,
     started_at: "2025-09-30T16:00:00Z",
-    user_id: {
-    name: "Liam Müller",
-    username: "liam_muller",
-    email: "liam.muller@example.de",
-    country: "Germany",
+    user: {
+    user_id: 2,
+    name: "Sophia Johnson",
+    username: "sophie_johnson",
+    email: "sophia.johnson@example.com",
+    country: "USA",
+    joined_date: "2024-01-05",
+    isLive: false,
     },
   },
   {
@@ -96,11 +141,14 @@ export const StreamersData = [
     duration: "Live",
     isLive: true,
     started_at: "2025-10-05T10:30:00Z",
-    user_id: {
-    name: "Liam Müller",
-    username: "liam_muller",
-    email: "liam.muller@example.de",
-    country: "Germany",
+    user: {
+       user_id: 4,
+    name: "KodaKawa",
+    username: "kodkawa",
+    email: "ko.kawa@example.de",
+    country: "India",
+    joined_date: "2024-12-11",
+    isLive: true,
     },
   },
   {
@@ -112,11 +160,14 @@ export const StreamersData = [
     duration: "1:45:10",
     isLive: false,
     started_at: "2025-09-29T12:15:00Z",
-    user_id: {
-    name: "Liam Müller",
-    username: "liam_muller",
-    email: "liam.muller@example.de",
-    country: "Germany",
+    user: {
+    user_id: 6,
+    name: "Inonix Master",
+    username: "inonix",
+    email: "in@example.de",
+    country: "Africa",
+    joined_date: "2025-1-3",
+    isLive: false,
     },
   },
   {
@@ -128,11 +179,14 @@ export const StreamersData = [
     duration: "1:20:03",
     isLive: false,
     started_at: "2025-09-21T19:00:00Z",
-    user_id: {
-    name: "Liam Müller",
-    username: "liam_muller",
-    email: "liam.muller@example.de",
-    country: "Germany",
+    user: {
+    user_id: 7,
+    name: "Bloody Babe",
+    username: "bloddy_bae",
+    email: "bae@example.de",
+    country: "Canada",
+    joined_date: "2025-5-8",
+    isLive: false,
     },
   },
 ];
