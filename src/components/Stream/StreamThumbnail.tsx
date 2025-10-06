@@ -31,9 +31,11 @@ export default function StreamThumbnail({
   return (
       <Link href={`/stream/user/1`} >
         <div className="block w-[16vw] h-[15vh] p-2  border">
-          <div className="flex justify-between px-2 h-full" style={{backgroundImage: `url('/thumb.jpeg')`, backgroundSize: "cover", backgroundPosition:"center", backgroundRepeat: "no-repeat"}}>
-            <p>Live</p>
-            <p>12k</p>
+          <div className=" px-2 h-full" style={{backgroundImage: `url('/thumb.jpeg')`, backgroundSize: "cover", backgroundPosition:"center", backgroundRepeat: "no-repeat"}}>
+            <div className="flex justify-between">
+            <p className="px-[4px] py-[2px] bg-red-400 font-semibold text-sm rounded-sm text-center">Live</p>
+            <p className="px-[4px] py-[2px] bg-gray-100/40 font-semibold text-sm rounded-sm text-center">12.5k</p>
+            </div>
           </div>
       </div>
       <div className="p-1 w-[16vw] truncate ">
