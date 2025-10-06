@@ -4,12 +4,14 @@ export default function HomePage() {
   return (
     <div className="px-8 py-5 ">
       <div className=" ">
-            <div className="h-[28vh] w-[100vw]   border-b-1 ">
+            <div className="h-[34vh] w-[90vw]   border-b-1 ">
               <h1 className="font-semibold text-4xl ">Trending Streamers</h1>
               <TrendingStreamers/>
             </div>
             <div className="p-2 "> 
               <h1 className="font-semibold text-4xl ">Followed Streamers</h1>
+              <TrendingStreamers/>
+              <TrendingStreamers/>
             </div>
             </div>
        </div>
