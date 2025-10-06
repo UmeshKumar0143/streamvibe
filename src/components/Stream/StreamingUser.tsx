@@ -27,7 +27,7 @@ export default  function StreamingUser({user}: {user: CurrentUser}) {
     </div>
 
     </div>
-    <div className="flex justify-between gap-2  ">
+    <div className="flex justify-between gap-2 items-center  ">
         <div className="flex px-2 py-2  rounded-lg   items-center gap-4 hover:bg-accent">
         <Link href={"./username"} className=" flex  items-center gap-4 ">
         <Image src={"/avatar.png"} alt="avatar" className="rounded-full  mt-2  w-10 h-10 " width={20} height={20} />

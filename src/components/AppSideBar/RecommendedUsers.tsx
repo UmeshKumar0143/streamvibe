@@ -4,23 +4,16 @@ import { useSideBar } from "@/store/use-sidebar";
 import Image from "next/image";
 import Link from "next/link";
 import Hint from "./Hint";
+import CurrentUser from "@/lib/types";
 
 
-interface Userdata {
-    user_id: number
-    name:string
-    username: string
-    email: string
-    country: string
-    joined_date: string
-    isLive: boolean
-}
+
 
 export default function RecommendedUser(){
            const {collasped} = useSideBar();  
     return <div>
         <div className="flex flex-col gap-4  md:gap-6 p-2 md:p-3">
-                {user_data.map((item:Userdata,index:number)=>{
+                {user_data.map((item:CurrentUser,index:number)=>{
                     return <div className={`flex  items-center justify-between ${!collasped && "px-2"}   hover:bg-neutral-800 hover:cursor-pointer rounded-lg `} key={index}>
                         <Hint label={collasped? item.name : ""} side={"left"} asChild key={index}>
                         <Link href={`/user/${item.username}`} className="flex group items-center gap-2  md:px-2 md:py-1 ">
