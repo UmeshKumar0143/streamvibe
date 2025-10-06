@@ -1,12 +1,12 @@
 import { StreamersData } from "@/lib/data";
-import Thumbnail from "../Stream/StreamThumbnail";
+import StreamThumbnail from "../Stream/StreamThumbnail";
 
 export default function  TrendingStreamers(){
-    return <div className="py-6 flex gap-3 w-full  ">
+    return <div className="py-6 flex gap-8 w-[100vw]  ">
         {
             StreamersData.map((item,index)=> {
-                return <div> 
-                    <Thumbnail key={index} title={item.title} duration={item.duration} thumbnail={item.thumbnail} viewers={item.views} isLive= {item.isLive}   />
+                return <div key={index}> 
+                    <StreamThumbnail ThumbnailProps={item}   />
                 </div>
             })
         }
