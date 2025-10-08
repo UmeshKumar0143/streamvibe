@@ -101,7 +101,7 @@ export const StreamersData = [
     thumbnail: "https://i.imgur.com/6bVvYhJ.png",
     viewers: 3210,
     duration: "2:04:11",
-    isLive: false,
+    isLive: true,
     started_at: "2025-09-27T18:00:00Z",
     user: {
      user_id: 3,
@@ -120,7 +120,7 @@ export const StreamersData = [
     thumbnail: "https://i.imgur.com/5uQPw5m.png",
     viewers: 8900,
     duration: "0:58:44",
-    isLive: false,
+    isLive: true,
     started_at: "2025-09-30T16:00:00Z",
     user: {
     user_id: 2,
